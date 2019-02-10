@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Felicity The Bootcamp Branch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+          <!-- Navbar Logo -->
+          <div class="logo">
+            <img id="xxxx" src="../images/logo.png" alt="SMAHT!" />
+            <a class="logoAndFont" href="home.html">Felicity The Bootcamp Branch</a>
+          </div>  
+          
+          <!-- Navbar Links -->
+          <ul id="log-out">
+            <li><a href="../html/login.html">Log out</a></li>
+          </ul>
+    </nav>
+
+    <div class="row profile-body">
+      <div class="col-6 col-md-2" id="left-col">
+            <!-- Example single danger button -->
+        <div class="btn-group" id="dropdown-menu">
+          <button type="button" id="menu-button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Action
+          </button>
+             <div class="dropdown-menu" id="menu">
+                <a class="dropdown-item" id="start-survey">Join A Group</a>
+                <hr>
+                <a class="dropdown-item" href="#">Leave The Group</a>
+                <hr>
+                <a class="dropdown-item" href="#">Groups Available</a>
+             </div>
+        </div>
+    </div>
+
+      <div class="col-6 col-md-8" id="middle-col">
+        <div class="row body-row1">
+          <img src="../images/dog-pro.jpeg" id="profile-image" alt="profile-image">
+          <div id="profile-info">
+          <div aria-placeholder="Username">KUKU Doggy</div>
+          <div id="email-address">Email: doggy@gmail.com</div>
+          </div>
+
+        </div>
+        <hr style="background-color:rgba(73, 45, 35, 0.959); padding: 2px;">
+        <div class="row body-row2">
+
+            <div class="survey-visibility" class="container" id="survey-question">
+
+                <h2>Answer Some Survey Questions To Find A Group:</h2>
+                <hr>
+            
+                <h3><strong>About You</strong></h3>
+                <h4>Name (Required)</h4>
+                <input type="text" id="name" class="about-form" class="form-control" required="">
+                <br><br>
+            
+                <h4>Email Address (Required)</h4>
+                <input type="text" id="email-address" class="about-form" class="form-control" required="">
+            
+                <hr>
+             
+                <div class="form-group">
+                <h3><strong>Question 1</strong></h3>
+                <label for="question1"><h4>which study location do you prefer?</h4></label>
+                <select class="form-control" id="question1" style="width: 200px;">
+                  <span>Select an Option</span>
+                  <option value="1">Select an Option</option>
+                  <option value="2">Bellevue</option>
+                  <option value="3">Seattle</option>
+                  <option value="4">Renton</option>
+                  <option value="5">Kirkland</option>
+                </select>
+                </div>
+            
+                <div class="form-group">
+                  <h3><strong>Question 2</strong></h3>
+                  <label for="question2"><h4>Which topic do you want to focus on?</h4></label>
+                  <select class="form-control" id="question2" style="width: 200px;">
+                    <span>Select an Option</span>
+                    <option value="1">Select an Option</option>
+                    <option value="2">Javascript</option>
+                    <option value="3">Front End Technologies</option>
+                    <option value="4">Back End Technologies</option>
+                    <option value="5">DataStructure and Algorithm</option>
+                </select>
+                </div>
+            
+            
+                <div class="form-group">
+                  <h3><strong>Question 3</strong></h3>
+                  <label for="question3"><h4>Which days are you available?</h4></label>
+                  <select class="form-control" id="question3" style="width: 200px;">
+                    <span>Select an Option</span>
+                    <option value="1">Select an Option</option>
+                    <option value="2">Monday</option>
+                    <option value="3">Tuesday</option>
+                    <option value="4">Wednesday</option>
+                    <option value="5">Thursday</option>
+                    <option value="6">Friday</option>
+                    <option value="7">Saturday</option>
+                    <option value="8">Sunday</option>
+                </select>
+                </div>
+            
+            
+                <div class="form-group">
+                  <h3><strong>Question 4</strong></h3>
+                  <label for="question4"><h4>Which time ranges are you available?</h4></label>
+                  <select class="form-control" id="question4" style="width: 200px;">
+                    <span>Select an Option</span>
+                    <option value="1">Select an Option</option>
+                    <option value="2">Morning (8am - 12pm)</option>
+                    <option value="3">Noon (12pm - 4pm) </option>
+                    <option value="4">Evening (4pm - 7pm)</option>
+                    <option value="5">Late Evening (7pm - 9pm)</option>
+                </select>
+                </div>
+                <!-- Submit Button -->
+                <div class="d-flex justify-content-center mb-3">
+                  <button id="submit-btn" style = "width: 220px; height: 40px; background-color: rgba(230, 123, 53, 0.9); border: 2px solid orangered; ; font-size: 20px;position: relative;left: 180px;font-weight: bolder; color: darkgreen;" class="btn btn-info border border-dark">Find A Group!</button>
+                </div>
+            </div>          
+        </div>
+      </div>
+      <div class="col-6 col-md-2"></div>
+    </div>
+    
+      <script src="../js/profile.js"></script>  
+      <script src="../js/survey.js"></script> 
+      <!-- <script src="../js/login.js"></script> -->
+         
+</body>
+</html>
