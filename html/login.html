@@ -12,6 +12,7 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    
 </head>
 <body>
@@ -21,7 +22,7 @@
           <!-- Navbar Logo -->
           <div class="logo">
             <img id="xxxx" src="../images/logo.png" alt="SMAHT!" />
-            <a class="logoAndFont" href="../index.html">Felicity The Bootcamp Branch</a>
+            <a class="logoAndFont" href="home.html">Felicity The Bootcamp Branch</a>
           </div>
   
           <!-- Navbar Links -->
@@ -33,20 +34,22 @@
 
     <div class="login-page">
         <div class="form">
-          <form class="register-form" id="register">
+          <form class="register-display" class="register-form" id="register">
             <input type="text" placeholder="name"/>
             <input type="password" placeholder="password"/>
             <input type="text" placeholder="email address"/>
             <button>create</button>
-            <p class="message">Already registered? <a href="#">Sign In</a></p>
+            <p class="message">Already registered? <a href="#" id="sign-in">Sign In</a></p>
           </form>
           <form class="login-form" id="login">
             <input type="text" placeholder="username"/>
             <input type="password" placeholder="password"/>
             <button id="login-button">login</button>
             
-            <p class="message">Not registered? <a href="" id="register-button">Create an account</a></p>
-          
+            <p class="message">Not registered?</p> 
+            <br>
+            <button id="register-button">Create an account</button>
+      
           </form>
         </div>
       </div>

@@ -38,6 +38,7 @@ $(function() {
 
   });
 
+  
 //   function loginUser(username, password) {
 //     $.post("/", {
 //       username: username,
